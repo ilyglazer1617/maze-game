@@ -1,0 +1,149 @@
+body {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation: color 5 sec ease-in-out infinite;
+    font-family: cursive;
+
+}
+
+.conteiner{
+    display: grid;
+    width: 40rem;
+    height: 25rem;
+    grid-template-rows: repeat(5, 2fr) ;
+    grid-template-columns:repeat(7, 1.4fr) ;
+    background-color: aqua;
+    border: 1px solid black;
+   
+    animation: pulsate 1.5s infinite alternate;  
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              inset 0 0 0.3rem #bc13fe; 
+}
+
+.conteiner,
+ #colom1row1,
+ #colom2row1,
+ #colom3row1,
+ #colom4row1,
+ #colom5row1,
+ #colom6row1,
+ #colom7row1,
+ #colom1row2,
+ #colom2row2,
+ #colom3row2,
+ #colom4row2,
+ #colom5row2,
+ #colom6row2,
+ #colom7row2,
+ #colom1row3,
+ #colom2row3,
+ #colom3row3,
+ #colom4row3,
+ #colom5row3,
+ #colom6row3,
+ #colom7row3,
+ #colom1row4,
+ #colom2row4,
+ #colom3row4,
+ #colom4row4,
+ #colom5row4,
+ #colom6row4,
+ #colom7row4,
+ #colom1row5,
+ #colom2row5,
+ #colom3row5,
+ #colom4row5,
+ #colom5row5,
+ #colom6row5,
+ #colom7row5{
+border: 4px solid black;
+border-radius: 10px;
+width: 0.5fr;
+height: 2fr;
+justify-content: center;
+text-align: center;
+margin:1px;
+font-size: large;
+}
+
+
+.rouls_wrap{
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+   
+}
+
+.btn{
+    background: aquamarine;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    animation: pulsate 1.5s infinite alternate;  
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              inset 0 0 0.3rem #bc13fe; 
+}
+
+.pupup{
+    width: 400px;
+    background:#23d5ab ;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50) scale(0.1);
+    text-align: center;
+    padding:0 30px 30px ;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s , top 0.4s ;
+
+
+
+}
+
+.open-popup{
+    visibility: visible;
+    top: 36%;
+    transform:translate(-50%,-50) scale(1);
+    left: 26%;
+}
+
+.pupup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.pupup button{
+    width: 100%;
+    margin-top:0 ;
+    padding: 10px 0;
+    background: #6fd649;
+    color: deeppink;
+    border: 0;
+    outline: none;
+    font-size: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+
+}
